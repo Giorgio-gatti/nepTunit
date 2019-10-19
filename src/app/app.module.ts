@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {SolarSystemComponent} from "./core/solar-system/solar-system.component";
 import {HomePageComponent} from "./core/home-page/home-page.component";
 import {BookingComponent} from "./core/booking/booking.component";
+import {AngularFontAwesomeModule} from "angular-font-awesome";
+import {CarouselModule} from "ngx-carousel-lib";
 
 const appRoutes: Routes = [
   { path: 'solarMap', component: SolarSystemComponent },
@@ -28,6 +30,7 @@ const appRoutes: Routes = [
       appRoutes
     ),
     BrowserModule,
+      CarouselModule,
     NavbarModule,
     AppRoutingModule
   ],

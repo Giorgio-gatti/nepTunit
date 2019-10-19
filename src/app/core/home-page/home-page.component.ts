@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
+import { CarouselComponent } from "ngx-carousel-lib";
 
 
 
@@ -9,6 +10,7 @@ import {Component} from '@angular/core';
 })
 export class HomePageComponent {
 
+  @ViewChild('topCarousel') topCarousel: CarouselComponent;
 
   constructor() {
   }

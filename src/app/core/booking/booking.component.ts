@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import * as $ from 'jquery';
 
 
 
@@ -10,6 +11,35 @@ import {Component, OnInit} from '@angular/core';
 export class BookingComponent implements OnInit{
     showCard: boolean = false;
     hideForm: boolean = true;
+    cardsList: Array<any> = [
+        {
+            title: 'Titolo',
+            description: 'Descrizione',
+            departure: '19/10/2019',
+            arrival: '19/10/2022',
+            footer: 'footer',
+            vip: true,
+            img: ''
+        },
+        {
+            title: 'Titolo',
+            description: 'Descrizione',
+            departure: '19/10/2019',
+            arrival: '19/10/2022',
+            footer: 'footer',
+            vip: true,
+            img: ''
+        },
+        {
+            title: 'Titolo',
+            description: 'Descrizione',
+            departure: '19/10/2019',
+            arrival: '19/10/2022',
+            footer: 'footer',
+            vip: true,
+            img: ''
+        }
+    ];
 
     constructor() {
     }
@@ -20,6 +50,7 @@ export class BookingComponent implements OnInit{
     submitForm() {
         this.showCard = !this.showCard;
         this.hideForm = !this.hideForm;
+        $('#booking').fadeOut();
     }
 
 }
