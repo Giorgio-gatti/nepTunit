@@ -1,0 +1,19 @@
+#title {
+    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+    color: red;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: arial, helvetica;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.card-body {
+    background-color: #343a40;
+}
+
+.card-text {
+    color:white;
+}

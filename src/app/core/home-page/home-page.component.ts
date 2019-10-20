@@ -10,7 +10,7 @@ import { CarouselComponent } from "ngx-carousel-lib";
 })
 export class HomePageComponent {
 
-  @ViewChild('topCarousel') topCarousel: CarouselComponent;
+  @ViewChild('topCarousel', {static: false}) topCarousel: CarouselComponent;
 
   constructor() {
   }

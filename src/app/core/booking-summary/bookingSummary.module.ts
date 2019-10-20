@@ -1,25 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import {BookingComponent} from "./booking.component";
-import {BookingSummaryModule} from "../booking-summary/bookingSummary.module";
+import {BookingSummaryComponent} from "./bookingSummary.component";
+
 
 
 @NgModule({
     imports: [
         HttpClientModule,
-        CommonModule,
-        BookingSummaryModule
+        CommonModule
     ],
     declarations: [
-        BookingComponent
+        BookingSummaryComponent
     ],
     providers: [
     ],
     exports: [
-        BookingComponent
+        BookingSummaryComponent
     ],
     entryComponents: [
     ]
 })
-export class BookingModule { }
+export class BookingSummaryModule { }

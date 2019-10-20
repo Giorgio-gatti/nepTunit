@@ -10,11 +10,13 @@ import {HomePageComponent} from "./core/home-page/home-page.component";
 import {BookingComponent} from "./core/booking/booking.component";
 import {AngularFontAwesomeModule} from "angular-font-awesome";
 import {CarouselModule} from "ngx-carousel-lib";
+import {BookingSummaryComponent} from "./core/booking-summary/bookingSummary.component";
 
 const appRoutes: Routes = [
   { path: 'solarMap', component: SolarSystemComponent },
     {path: 'booking', component: BookingComponent},
   { path: 'home', component: HomePageComponent},
+    {path: 'booking/summary', component: BookingSummaryComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     AppComponent,
     SolarSystemComponent,
     HomePageComponent,
-      BookingComponent
+      BookingComponent,
+      BookingSummaryComponent
   ],
   imports: [
     RouterModule.forRoot(

@@ -4,11 +4,11 @@ import * as $ from 'jquery';
 
 
 @Component({
-    selector: 'app-booking',
-    templateUrl: 'booking.component.html',
-    styleUrls: ['booking.component.css']
+    selector: 'app-booking-summary',
+    templateUrl: 'bookingSummary.component.html',
+    styleUrls: ['bookingSummary.component.css']
 })
-export class BookingComponent implements OnInit{
+export class BookingSummaryComponent implements OnInit{
     showCard: boolean = false;
     hideForm: boolean = true;
     cardsList: Array<any> = [
